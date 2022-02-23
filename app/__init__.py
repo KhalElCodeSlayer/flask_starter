@@ -1,6 +1,10 @@
 from flask import Flask
 from .config import Config
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 app.config.from_object(Config)
-from app import views
+app.config['SECRET_KEY'] = 'some$3cretKey'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:Khalid123@localhost/db_app'
+db = SQLAlchemy(app)
+from app import views, models

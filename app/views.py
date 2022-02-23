@@ -7,6 +7,9 @@ This file creates your application.
 
 from app import app
 from flask import render_template, request, redirect, url_for
+from app import db
+from app.models import User
+from app.forms import EmailPasswordForm
 
 
 ###
@@ -24,6 +27,17 @@ def about():
     """Render the website's about page."""
     return render_template('about.html', name="Mary Jane")
 
+
+@app.route('/person')
+def person():
+    first_user = db.session.query(User).first()
+    return "username: {}, email: {}".format(first_user.username, first_user.email)
+
+
+@app.route('/theform',methods=["GET","POST"])
+def theform():
+    form = EmailPasswordForm()
+    return render_template('theform.html', form=form)
 
 ###
 # The functions below should be applicable to all Flask apps.

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block js %}
+{% endblock %}
+
+{% block main %}
+<div class="container">
+    <form action="{{ url_for('theform') }}" method="post">
+        <div class="fom-group">
+            {{ form.username.label }}
+            {{ form.username }}
+        </div>
+        <div class="fom-group">
+            {{ form.email.label }}
+            {{ form.email }}
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+{% endblock %}

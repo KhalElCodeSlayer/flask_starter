@@ -1,3 +1,171 @@
+.page-header{
+    margin: 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+
 body {
-    padding-top: 5rem;
+    padding-top: 50px;
+    background-color: lightgray;
+}
+
+
+.flabel{
+    font-weight: bold;
+    font-size: 18px
+}
+
+.form-grid{
+    display:grid;
+    grid-gap:20px;
+    grid-template-columns: auto auto; 
+}
+
+.ffield{
+    width: 100%;
+}
+
+form{
+    background-color: white;
+    margin: 30px;
+    padding: 10px;
+}
+
+.form-area{  
+    margin: 10px;
+    padding: 10px;
+}
+
+
+.properties{
+    display:grid;
+    grid-gap:15px;
+    grid-template-columns: auto auto auto;
+}
+
+.card{
+    width:350px;
+    margin:10px;
+}
+
+.propimg{
+    width:100%;
+    height:100%;
+    padding:5px;
+}
+
+.propsbody{
+    margin-left: 15px;
+}
+
+.title{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.price{
+    background-color: rgb(2, 233, 250);
+    padding: 4px;
+    border-radius: 45px;
+    width: 45%;
+    text-align: center;
+    margin-left: 15px;
+}
+
+.location{
+    margin-left: 15px;
+}
+
+.invidprop{
+    background-color: rgb(13, 114, 230);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.propimg2{
+    width:550px;
+    padding:5px;
+}
+
+.property{
+    display:grid;
+    grid-gap:20px;
+    grid-template-columns: auto auto;
+    border: 5px;
+    border-radius: 10px  ;
+}
+
+.proptitle{
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 15px;
+    padding: 5px;
+}
+
+.price-type-grid{
+    display:grid;
+    grid-gap:30px;
+    grid-template-columns: 25% 25%;
+}
+
+.propprice{
+    background-color: rgb(13, 114, 230);
+    padding: 5px;
+    border-radius: 45px;
+    width: 100%;
+    text-align: center;
+    margin-left: 15px;
+    color: white;
+}
+
+.proptype{
+    color: white;
+    background-color: orange;
+    padding: 5px;
+    border-radius: 45px;
+    width: 100%;
+    text-align: center;
+    margin-left: 15px;
+}
+
+.propdesc{
+    padding: 5px;
+    text-align: left;
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+.bed-bath-grid{
+    display:grid;
+    grid-gap:10px;
+    grid-template-columns: 25% 25%;
+    padding: 5px;
+    text-align: justify;
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+.proploc {
+    padding: 5px;
+    text-align: justify;
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+.btn{
+    background-color:turquoise;
+    color: white;
+    padding: 10px;
+    text-align: center;  
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.form-btn{
+    background-color: rgb(13, 114, 230)
 }

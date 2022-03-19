@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block main %}
+{% include 'flashes.html' %}
+
+<div class="page-header">
+    <h1 >Properties</h1>
+    <p >This webpage is about Properties.</p>
+</div>
+<div class = 'properties'>
+    {% for property in properties %} 
+    <div class = "card">
+        <img class ='propimg1' src = "{{ url_for('getimage', filename= property.property_photo) }}" alt ="Photo">
+        <div class = "card-body">
+            <div class = "title">{{property.property_title}}</div>
+            <div class = "location">{{property.property_location}}</div><br>
+            <div class = "price">{{property.property_price}}</div>
+        </div><br>
+        <a href="{{url_for('viewproperty', propertyid = property.property_id)}}" ><div class="invidprop">View Property</div></a>
+        
+    </div>
+    {%endfor%}
+</div>
+{% endblock %}

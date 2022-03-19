@@ -11,3 +11,5 @@ psycopg2
 flask_wtf
 email_validator
 flask_mail
+WTForms
+Flask-Migrate

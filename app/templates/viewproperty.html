@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block main %}
+{% include 'flashes.html' %}
+
+<div class="page-header">
+    <h1 >Individual Property</h1>
+    <p>This webpage is about Individual Properties.</p>
+</div>
+
+
+<div class = 'property'>
+    <img class ='propimg2' src = "{{ url_for('getimage', filename= property.property_photo) }}" alt ="Photo">
+    <div>
+        <div class = "proptitle">{{property.property_title}}</div>
+        <div class = "price-type-grid">
+            <div class = "propprice">{{property.property_price}}</div>
+            <div class = "proptype">{{property.property_type}}</div>
+        </div>
+        <div class = "propdesc">{{property.property_description}}</div>
+        <div class = "bed-bath-grid">
+            <div>{{property.property_rooms}} Bedrooms</div>
+            <div>{{property.property_bathroom}} Bathrooms</div>
+        </div>
+        <div class = "proploc">{{property.property_location}}</div>
+        <button class="btn" type="submit">Email Realtor</button>
+    </div>
+</div>
+{% endblock %}

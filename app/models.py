@@ -20,3 +20,4 @@ class Property(db.Model):
         self.property_type = property_type  
         self.property_location = property_location
         self.property_photo = property_photo    
+
